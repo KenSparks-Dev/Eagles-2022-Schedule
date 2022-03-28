@@ -1,0 +1,55 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: center;
+  height: 100vh;
+  margin-top: 40px;
+}
+
+.week {
+  display: grid;
+  grid-template-columns: 100px repeat(3, 1fr);
+  width: 550px;
+}
+
+.home,
+.away,
+.phi-record,
+.teams,
+.win,
+.loss {
+  display: flex;
+}
+
+.tie,
+.tie-column {
+  display: none;
+}
+
+.record {
+  display: none;
+}
+
+p,
+p span {
+  padding: 10px;
+  border: solid 1px black;
+  text-align: center;
+}
+
+.opp,
+.eagles {
+  width: 100px;
+}
+
+.week-header {
+  display: grid;
+  grid-template-columns: 100px repeat(2, 160px) 67px 62px 70px;
+  width: 550px;
+}
